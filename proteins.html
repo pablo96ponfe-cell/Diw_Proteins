@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Proteins</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #fff;
+    }
+
+    /* --- HEADER --- */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #000;
+      color: white;
+      padding: 10px 20px;
+    }
+
+    header h1 {
+      font-style: italic;
+      font-size: 20px;
+    }
+
+    header input[type="text"] {
+      width: 200px;
+      padding: 5px;
+      border-radius: 4px;
+      border: none;
+    }
+
+    header .right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* --- SECCIONES --- */
+    section {
+      padding: 20px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 15px;
+    }
+
+    .grid img {
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    /* --- FOOTER --- */
+    footer {
+      background-color: #eaeaea;
+      padding: 10px 20px;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    footer img {
+      height: 20px;
+      vertical-align: middle;
+      margin: 0 5px;
+    }
+
+    .social {
+      margin-top: 10px;
+    }
+
+    .social a {
+      margin: 0 8px;
+      text-decoration: none;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>PROTEINS</h1>
+    <input type="text" placeholder="Buscar...">
+    <div class="right">
+      <span>Iniciar sesión</span>
+      🛒
+    </div>
+  </header>
+
+  <section>
+    <h2>TOP MES</h2>
+    <div class="grid">
+      <img src="https://via.placeholder.com/150x150?text=Whey">
+      <img src="https://via.placeholder.com/150x150?text=Creatine">
+      <img src="https://via.placeholder.com/150x150?text=Shaker">
+      <img src="https://via.placeholder.com/150x150?text=Leggins">
+    </div>
+  </section>
+
+  <section>
+    <h2>Novedades</h2>
+    <div class="grid">
+      <img src="https://via.placeholder.com/150x150?text=Peanut+Butter">
+      <img src="https://via.placeholder.com/150x150?text=Chocolate+Syrup">
+      <img src="https://via.placeholder.com/150x150?text=Peanut+Butter+2">
+      <img src="https://via.placeholder.com/150x150?text=Vanilla+Waffles">
+    </div>
+  </section>
+
+  <footer>
+    <p>Opciones de envío:
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/DHL_Logo.svg" alt="DHL">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/24h_symbol.svg" alt="24h">
+    </p>
+    <p>© Copyright 2025 Proteins.com, S.A. Todos los derechos reservados.</p>
+    <div class="social">
+      <a href="#">📷</a>
+      <a href="#">👍</a>
+      <a href="#">▶️</a>
+    </div>
+  </footer>
+
+</body>
+</html>
