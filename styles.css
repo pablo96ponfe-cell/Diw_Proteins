@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ---------- HEADER ---------- */
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+}
+
+.menu-btn, .cart {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 22px;
+}
+
+.search {
+    flex: 1;
+    padding: 6px;
+}
+
+.login-link {
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+/* ---------- GRID ---------- */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    max-width: 900px;
+}
+
+.grid img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* ---------- FOOTER ---------- */
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: #555;
+}
+
+/* ---------- LOGIN ---------- */
+
+.login-container {
+    width: 90%;
+    max-width: 350px;
+    margin: 70px auto;
+    text-align: center;
+}
+
+.input, .btn {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+}
+
+.btn {
+    background: black;
+    color: white;
+    border: none;
+}
+
+.btn.secondary {
+    background: #ddd;
+    color: black;
+}
+
+.back {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+/* ------------------------------------------------- */
+/*                RESPONSIVE DESIGN                 */
+/* ------------------------------------------------- */
+
+/* Tablets (iPad) */
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Móviles */
+@media (max-width: 600px) {
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .search {
+        width: 100%;
+    }
+}
