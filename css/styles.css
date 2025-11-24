@@ -83,6 +83,11 @@ body {
     text-decoration: none;
 }
 
+img{
+    width: 100px;
+    height: 200px;
+}
+
 /* CSS para ver en tablet y movil */
 
 /* Tablet */
