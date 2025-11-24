@@ -1,50 +1,94 @@
-/* CSS basico a mejorar, solo para comprobar el html*/
+/* ===========================
+   ESTILOS BASE DE LA PÁGINA
+   =========================== */
 
-body {
+   body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background: #f5f5f5;
 }
+
+/* ===========================
+          HEADER
+   =========================== */
 
 .header {
     display: flex;
     align-items: center;
-    gap: 10px;
     padding: 10px 20px;
     background: #000;
     color: #fff;
+    gap: 15px;
 }
 
-.menu-btn, .cart {
+.logo a {
+    text-decoration: none;
+    color: #b78aff;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.menu-btn {
     background: none;
     border: none;
     color: white;
-    font-size: 22px;
+    font-size: 26px;
+    cursor: pointer;
+    margin-right: 10px;
 }
 
 .search {
     flex: 1;
+    max-width: 400px;
     padding: 6px;
+    border-radius: 6px;
+    border: none;
+}
+
+.header nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .login-link {
     color: white;
-    margin-right: 10px;
     text-decoration: none;
 }
 
+.cart {
+    font-size: 22px;
+}
+
+/* ===========================
+            CONTENT
+   =========================== */
+
+.content {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
 
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
-    max-width: 900px;
+    max-width: 1000px;
 }
 
 .grid img {
     width: 100%;
     border-radius: 8px;
+    object-fit: cover;
 }
 
+/* ===========================
+            FOOTER
+   =========================== */
 
 .footer {
     text-align: center;
@@ -52,6 +96,9 @@ body {
     color: #555;
 }
 
+/* ===========================
+            LOGIN
+   =========================== */
 
 .login-container {
     width: 90%;
@@ -70,6 +117,7 @@ body {
     background: black;
     color: white;
     border: none;
+    cursor: pointer;
 }
 
 .btn.secondary {
@@ -83,16 +131,16 @@ body {
     text-decoration: none;
 }
 
-/* CSS para ver en tablet y movil */
+/* ===========================
+      RESPONSIVE DESIGN
+   =========================== */
 
-/* Tablet */
 @media (max-width: 1024px) {
     .grid {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-/* Movil */
 @media (max-width: 600px) {
     .header {
         flex-wrap: wrap;
@@ -105,4 +153,83 @@ body {
     .search {
         width: 100%;
     }
+}
+
+/* ===========================
+      MENU ACORDEÓN MODERNO
+   =========================== */
+
+.menu-desplegable {
+    display: none;
+    background: #0f0f0f;
+    padding: 20px;
+    color: white;
+    border-bottom: 2px solid #222;
+    animation: fadeIn 0.3s ease;
+    font-family: Arial;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.menu-desplegable .item {
+    margin-bottom: 12px;
+}
+
+.menu-desplegable .titulo {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px 0;
+    border-left: 3px solid transparent;
+    transition: 0.2s;
+}
+
+.menu-desplegable .titulo:hover {
+    border-left: 3px solid #6d32ff;
+    color: #c3aaff;
+}
+
+.menu-desplegable .contenido {
+    display: none;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.menu-desplegable a {
+    display: block;
+    margin: 6px 0;
+    color: #ddd;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.menu-desplegable a:hover {
+    color: #b78aff;
+}
+
+.subitem {
+    margin-top: 8px;
+}
+
+.subtitulo {
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 6px 0;
+    border-left: 3px solid transparent;
+    transition: 0.2s;
+}
+
+.subtitulo:hover {
+    border-left: 3px solid #6d32ff;
+    color: #c3aaff;
+}
+
+.subcontenido {
+    display: none;
+    padding-left: 20px;
+    margin-top: 5px;
 }
