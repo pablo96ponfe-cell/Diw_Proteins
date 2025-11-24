@@ -1,9 +1,9 @@
+/* CSS basico a mejorar, solo para comprobar el html*/
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
-
-/* ---------- HEADER ---------- */
 
 .header {
     display: flex;
@@ -32,7 +32,6 @@ body {
     text-decoration: none;
 }
 
-/* ---------- GRID ---------- */
 
 .grid {
     display: grid;
@@ -46,7 +45,6 @@ body {
     border-radius: 8px;
 }
 
-/* ---------- FOOTER ---------- */
 
 .footer {
     text-align: center;
@@ -54,7 +52,6 @@ body {
     color: #555;
 }
 
-/* ---------- LOGIN ---------- */
 
 .login-container {
     width: 90%;
@@ -86,18 +83,16 @@ body {
     text-decoration: none;
 }
 
-/* ------------------------------------------------- */
-/*                RESPONSIVE DESIGN                 */
-/* ------------------------------------------------- */
+/* CSS para ver en tablet y movil */
 
-/* Tablets (iPad) */
+/* Tablet */
 @media (max-width: 1024px) {
     .grid {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-/* Móviles */
+/* Movil */
 @media (max-width: 600px) {
     .header {
         flex-wrap: wrap;
