@@ -8,18 +8,32 @@
     background: #f5f5f5;
 }
 
+main {
+    margin-top: 90px;
+}
+
+
 /* ===========================
           HEADER
    =========================== */
 
 .header {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
     background: #000;
     color: #fff;
-    gap: 15px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: auto auto 1fr auto auto;  
+    align-items: center;
+    column-gap: 15px;
 }
+
 
 .logo a {
     text-decoration: none;
@@ -39,17 +53,31 @@
 
 .search {
     flex: 1;
-    max-width: 400px;
     padding: 6px;
     border-radius: 6px;
     border: none;
+    margin: 0 15px;
 }
+
 
 .header nav {
     display: flex;
     align-items: center;
     gap: 15px;
 }
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo a,
+.logo a:visited {
+    color: white;
+    text-decoration: none;
+}
+
 
 .login-link {
     color: white;
@@ -75,16 +103,27 @@ h2 {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-    max-width: 1000px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
 }
 
 .grid img {
     width: 100%;
-    border-radius: 8px;
+    height: 380px;
     object-fit: cover;
+    border-radius: 10px;
 }
+
+.grid img {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+
 
 /* ===========================
             FOOTER
@@ -141,9 +180,12 @@ h2 {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .header {
         flex-wrap: wrap;
+        padding: 5px;
+        column-gap: 1px;
+        padding: 1px;
     }
 
     .grid {
@@ -151,9 +193,19 @@ h2 {
     }
 
     .search {
-        width: 100%;
+        width: 140%;
     }
+
+    .right-nav {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        padding-left: 70px; 
+    }
+    
 }
+
+
 
 /* ===========================
       MENU ACORDEÓN MODERNO

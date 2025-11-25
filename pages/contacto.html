@@ -1,58 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProTeins - Contacto</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
 
-<header class="header">
-    <button class="menu-btn">☰</button>
-    <h1 class="logo"><a href="index.html" class="logo">PROTEINS</a></h1>
-    <input type="text" placeholder="Buscar..." class="search">
-    <nav>
-        <a href="login.html" class="login-link">Iniciar sesión</a>
-        <span class="cart">🛒</span>
-    </nav>
-</header>
+    <header class="header">
+        <button class="menu-btn">☰</button>
+        <h1 class="logo">
+            <a href="../index.html" class="logo">PROTEINS</a>
+        </h1>
+        <input type="text" placeholder="Buscar..." class="search">
+        <nav class="right-nav">
+            <a href="../login.html" class="login-link">Iniciar sesion</a>
+            <span class="cart">🛒</span>
+        </nav>
+    </header>
 
-<main class="content">
-    <section class="top-section">
-        <h2>Contacto</h2>
-        <p>Si tienes cualquier duda, ponte en contacto con nosotros.</p>
+    <div class="menu-desplegable">
+        <div class="item">
+            <div class="titulo">Suplementacion</div>
+            <div class="contenido">
+                <a href="../pages/suplementos.html">Creatina</a>
+                <a href="../pages/suplementos.html">Proteina</a>
+                <a href="../pages/suplementos.html">Vitaminas</a>
+                <a href="../pages/suplementos.html">BCAA</a>
+            </div>
+        </div>
 
-        <form>
-            <p>
-                <label>
-                    Nombre<br>
-                    <input type="text" name="nombre" class="input">
-                </label>
-            </p>
+        <div class="item">
+            <div class="titulo">Equipamiento</div>
+            <div class="contenido">
+                <a href="../pages/equipamiento.html">Maquinas</a>
+                <a href="../pages/equipamiento.html">Discos</a>
+                <a href="../pages/equipamiento.html">Mancuernas</a>
+            </div>
+        </div>
 
-            <p>
-                <label>
-                    Email<br>
-                    <input type="email" name="email" class="input">
-                </label>
-            </p>
+        <div class="item">
+            <div class="titulo">Ropa</div>
+            <div class="contenido">
 
-            <p>
-                <label>
-                    Mensaje<br>
-                    <textarea name="mensaje" class="input" rows="4"></textarea>
-                </label>
-            </p>
+                <div class="subitem">
+                    <div class="subtitulo">Hombre</div>
+                    <div class="subcontenido">
+                        <a href="../pages/ropaHombre.html">Camisetas</a>
+                        <a href="../pages/ropaHombre.html">Pantalones</a>
+                        <a href="../pages/ropaHombre.html">Mallas</a>
+                    </div>
+                </div>
 
-            <button type="submit" class="btn">Enviar</button>
-        </form>
-    </section>
-</main>
+                <div class="subitem">
+                    <div class="subtitulo">Mujer</div>
+                    <div class="subcontenido">
+                        <a href="../pages/ropaMujer.html">Camisetas</a>
+                        <a href="../pages/ropaMujer.html">Pantalones</a>
+                        <a href="../pages/ropaMujer.html">Mallas</a>
+                    </div>
+                </div>
 
-<footer class="footer">
-    <p>© Copyright 2025 Proteins.com, S.A.</p>
-</footer>
+            </div>
+        </div>
+    </div>
 
+    <main class="content">
+        <section class="top-section">
+            <h2>Contacto</h2>
+            <p>Si tienes cualquier duda, ponte en contacto con nosotros.</p>
+
+            <form>
+                <p>
+                    <label>
+                        Nombre<br>
+                        <input type="text" name="nombre" class="input">
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        Email<br>
+                        <input type="email" name="email" class="input">
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        Mensaje<br>
+                        <textarea name="mensaje" class="input" rows="4"></textarea>
+                    </label>
+                </p>
+
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© Copyright 2025 Proteins.com, S.A.</p>
+    </footer>
+    <script src="../js/menu.js"></script>
 </body>
+
 </html>

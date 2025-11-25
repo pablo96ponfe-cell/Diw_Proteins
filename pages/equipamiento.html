@@ -1,44 +1,95 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProTeins - Equipamiento</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
 
-<header class="header">
-    <button class="menu-btn">☰</button>
-    <h1 class="logo"><a href="../index.html" class="logo">PROTEINS</a></h1>
-    <input type="text" placeholder="Buscar..." class="search">
-    <nav>
-        <a href="login.html" class="login-link">Iniciar sesión</a>
-        <span class="cart">🛒</span>
-    </nav>
-</header>
+    <header class="header">
+        <button class="menu-btn">☰</button>
+        <h1 class="logo">
+            <a href="../index.html" class="logo">PROTEINS</a>
+        </h1>
+        <input type="text" placeholder="Buscar..." class="search">
+        <nav class="right-nav">
+            <a href="../login.html" class="login-link">Iniciar sesion</a>
+            <span class="cart">🛒</span>
+        </nav>
+    </header>
 
-<main class="content">
-    <section class="top-section">
-        <h2>Equipamiento</h2>
-        <p>Máquinas, pesas y herramientas para tu gimnasio.</p>
-
-        <div class="grid">
-            <img src="../img/Imagenequipamiento/presBanca.jpg" alt="Máquina">
-            <img src="../img/Imagenequipamiento/prensa.jpg" alt="Máquina">
-            <img src="../img/Imagenequipamiento/multi_power.jpg" alt="">
-            <img src="../img/Imagenequipamiento/mancuernas.jpg" alt="">
-            <img src="../img/Imagenequipamiento/femoral.jpg" alt="">
-            <img src="../img/Imagenequipamiento/extensionCuadriceps.jpg" alt="">
-            <img src="../img/Imagenequipamiento/discos.jpg" alt="">
-            <img src="../img/Imagenequipamiento/biceps.jpg" alt="">
+    <div class="menu-desplegable">
+        <div class="item">
+            <div class="titulo">Suplementacion</div>
+            <div class="contenido">
+                <a href="../pages/suplementos.html">Creatina</a>
+                <a href="../pages/suplementos.html">Proteina</a>
+                <a href="../pages/suplementos.html">Vitaminas</a>
+                <a href="../pages/suplementos.html">BCAA</a>
+            </div>
         </div>
-    </section>
-</main>
 
-<footer class="footer">
-    <p>© Copyright 2025 Proteins.com, S.A.</p>
-</footer>
+        <div class="item">
+            <div class="titulo">Equipamiento</div>
+            <div class="contenido">
+                <a href="../pages/equipamiento.html">Maquinas</a>
+                <a href="../pages/equipamiento.html">Discos</a>
+                <a href="../pages/equipamiento.html">Mancuernas</a>
+            </div>
+        </div>
 
+        <div class="item">
+            <div class="titulo">Ropa</div>
+            <div class="contenido">
+
+                <div class="subitem">
+                    <div class="subtitulo">Hombre</div>
+                    <div class="subcontenido">
+                        <a href="../pages/ropaHombre.html">Camisetas</a>
+                        <a href="../pages/ropaHombre.html">Pantalones</a>
+                        <a href="../pages/ropaHombre.html">Mallas</a>
+                    </div>
+                </div>
+
+                <div class="subitem">
+                    <div class="subtitulo">Mujer</div>
+                    <div class="subcontenido">
+                        <a href="../pages/ropaMujer.html">Camisetas</a>
+                        <a href="../pages/ropaMujer.html">Pantalones</a>
+                        <a href="../pages/ropaMujer.html">Mallas</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <main class="content">
+        <section class="top-section">
+            <h2>Equipamiento</h2>
+            <p>Máquinas, pesas y herramientas para tu gimnasio.</p>
+
+            <div class="grid">
+                <img src="../img/Imagenequipamiento/presBanca.jpg" alt="Máquina">
+                <img src="../img/Imagenequipamiento/prensa.jpg" alt="Máquina">
+                <img src="../img/Imagenequipamiento/multi_power.jpg" alt="">
+                <img src="../img/Imagenequipamiento/mancuernas.jpg" alt="">
+                <img src="../img/Imagenequipamiento/femoral.jpg" alt="">
+                <img src="../img/Imagenequipamiento/extensionCuadriceps.jpg" alt="">
+                <img src="../img/Imagenequipamiento/discos.jpg" alt="">
+                <img src="../img/Imagenequipamiento/biceps.jpg" alt="">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© Copyright 2025 Proteins.com, S.A.</p>
+    </footer>
+    <script src="../js/menu.js"></script>
 </body>
+
 </html>
